@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "problem": "Find the derivative of f(x) = x^2 * sin x.",
+    "solution_block": "Problem: Find the derivative of f(x) = x^2 * sin x.\n\nSolution:\nStep 1. Apply the product rule: (uv)' = u'v + uv', where u = x² and v = sin x.\nStep 2. Compute derivatives: u' = 2x, v' = cos x.\nStep 3. Substitute into the product rule formula: f'(x) = 2x · sin x + x² · cos x.\n\nAnswer: 2x·sin(x) + x²·cos(x)",
+    "autoformalizer_code": "import Mathlib\n\ntheorem my_favorite_theorem (f : ℝ → ℝ) (hf : f = fun x => x ^ 2 * Real.sin x) :\n    deriv f = fun x => 2 * x * Real.sin x + x ^ 2 * Real.cos x := by sorry",
+    "compiles": true,
+    "prover_statement": "import Mathlib\n\ntheorem my_favorite_theorem (f : ℝ → ℝ) (hf : f = fun x => x ^ 2 * Real.sin x) :\n    deriv f = fun x => 2 * x * Real.sin x + x ^ 2 * Real.cos x := by"
+  }
+]

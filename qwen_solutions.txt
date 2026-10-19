@@ -1,0 +1,8 @@
+Problem: Find the derivative of f(x) = x^2 * sin x.
+
+Solution:
+Step 1. Apply the product rule: (uv)' = u'v + uv', where u = x² and v = sin x.
+Step 2. Compute derivatives: u' = 2x, v' = cos x.
+Step 3. Substitute into the product rule formula: f'(x) = 2x · sin x + x² · cos x.
+
+Answer: 2x·sin(x) + x²·cos(x)
