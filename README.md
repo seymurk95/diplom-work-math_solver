@@ -26,9 +26,9 @@ qwen.py  ──►  qwen_solutions.txt  ──►  kimina_autoformalizer.py  ─
 
 1. **[qwen3.8-4b-distill](https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF)** — генерация пошагового решения задачи.
    - **Роль:** получить решение в формате, где каждый шаг — явное равенство или логический переход, пригодный для перевода в Lean.
-2. **[Kimina Autoformalizer 7B](https://huggingface.co/AI-MO)** (`ai-mo.kimina-autoformalizer-7b`) — перевод условия задачи в формальную теорему на Lean 4.
+2. **[Kimina Autoformalizer 7B]([https://huggingface.co/AI-MO](https://huggingface.co/mradermacher/Kimina-Autoformalizer-7B-GGUF))** (`ai-mo.kimina-autoformalizer-7b`) — перевод условия задачи в формальную теорему на Lean 4.
    - **Роль:** выдать утверждение с именем `my_favorite_theorem` и заголовком `import Mathlib`.
-3. **Kimina Prover Distill 8B** (`kimina-prover-distill-8b`) — написание доказательства для готового утверждения.
+3. **[Kimina Prover Distill 8B](https://huggingface.co/mradermacher/Kimina-Prover-Distill-8B-GGUF)** (`kimina-prover-distill-8b`) — написание доказательства для готового утверждения.
    - **Роль:** по формальному утверждению построить доказательство тактиками Lean 4.
 4. **[Lean 4](https://lean-lang.org/) + [Mathlib](https://leanprover-community.github.io/)** — проверка. Запуск через `lake env lean` из проекта `my_project`.
 
