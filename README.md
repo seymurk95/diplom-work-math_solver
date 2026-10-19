@@ -24,7 +24,7 @@ qwen.py  ──►  qwen_solutions.txt  ──►  kimina_autoformalizer.py  ─
 
 Все модели запускаются локально через OpenAI-совместимый сервер (по умолчанию `http://localhost:1234/v1/chat/completions`, например LM Studio).
 
-1. **qwen3.8-4b-distill** — генерация пошагового решения задачи.
+1. **qwen3.8-4b-distill(https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF)** — генерация пошагового решения задачи.
    - **Роль:** получить решение в формате, где каждый шаг — явное равенство или логический переход, пригодный для перевода в Lean.
 2. **[Kimina Autoformalizer 7B](https://huggingface.co/AI-MO)** (`ai-mo.kimina-autoformalizer-7b`) — перевод условия задачи в формальную теорему на Lean 4.
    - **Роль:** выдать утверждение с именем `my_favorite_theorem` и заголовком `import Mathlib`.
